@@ -1,0 +1,32 @@
+{
+    "name": "amplify/installer",
+    "description": "This is a installer module for amplify",
+    "type": "library",
+    "license": "GPL-3.0-or-later",
+    "authors": [
+        {
+            "name": "Hafijul Islam",
+            "email": "hafijul.islam@easyask.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "ext-gd": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Amplify\\System\\Installer\\": "./"
+        },
+        "files": [
+            "./helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Amplify\\System\\Installer\\InstallerServiceProvider"
+            ]
+        }
+    }
+}
